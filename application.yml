@@ -3,12 +3,12 @@
     active: 
     - dev 
 ---
-spring；
+spring:
     profiles: dev        #开发环境
     application:
-      name: son-config-server
+      name: son-config-server-dev
 ---
-spring；
+spring:
     profiles: test       #测试环境
     application:
-      name: son-config-server
+      name: son-config-server-test
