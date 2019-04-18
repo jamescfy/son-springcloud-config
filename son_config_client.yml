@@ -1,0 +1,28 @@
+﻿spring:
+  profiles:
+    active: 
+    - dev 
+---
+server:
+    port: 8201
+spring:
+    profiles: dev        #开发环境
+    application:
+      name: son-config-server
+eureka:
+  client:
+    register-with-eureka: false # false 表示不向注册中心注册自己
+    service-url:  #注册到集群中
+      defaultZone: http://eureka-dev.com:7001/eureka/
+---
+server:
+    port: 8202
+spring:
+    profiles: test       #测试环境
+    application:
+      name: son-config-server
+eureka:
+  client:
+    register-with-eureka: false # false 表示不向注册中心注册自己
+    service-url:  #注册到集群中
+      defaultZone: http://eureka-dev.com:7001/eureka/
