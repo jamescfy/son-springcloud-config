@@ -13,7 +13,7 @@ eureka:
   client:
     register-with-eureka: false # false 表示不向注册中心注册自己
     service-url:  #注册到集群中
-      defaultZone: http://eureka-dev.com:7001/eureka/
+      defaultZone: http://eureka-dev.com:7001/eureka-dev/
 ---
 server:
     port: 8202
@@ -25,4 +25,4 @@ eureka:
   client:
     register-with-eureka: false # false 表示不向注册中心注册自己
     service-url:  #注册到集群中
-      defaultZone: http://eureka-dev.com:7001/eureka/
+      defaultZone: http://eureka-dev.com:7001/eureka-test/
